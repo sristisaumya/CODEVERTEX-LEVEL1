@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --bg--color:#081b29;
+    --second-bg-color:#112e42;
+    --text-bg-color:#ededed;
+    --main-bg-color:#3905d6;
+
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg--color);
+    color: var(--text-bg-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    /* background-color: rgb(5, 36, 36); */
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-bg-color);
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 1.5rem;
+    color: var(--text-bg-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: 3s;
+   
+}
+.navbar a:hover{
+color: var(--main-bg-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+     
+     background-size: cover;
+     background-position: center;
+}
+.home-content h1{
+    font-size: 6.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content{
+    max-width: 60rem;
+}
+.home-content .text-animate h3{
+    position: relative;
+font-size: 4rem;
+color: transparent;
+-webkit-text-stroke:.7px var(--main-bg-color) ;
+}
+.home-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+.home-imgHover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    
+    transition: 2s;
+}
+.home-imgHover:hover{
+    background-color: #112e42;
+    opacity: .8;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--second-bg-color);
+    padding-bottom: 4rem;
+}
+.heading{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.about-img{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    width: 70%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-bg-color);
+}
+.about-content{
+    text-align: center;
+}
+
+.about-content h3{
+    font-size: 2.5rem;
+}
+.about-content p{
+    font-size:  1.5rem;
+    margin: 2rem 0 3rem;
+}
+ .education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    gap: 1rem; 
+    background: var(--bg--color);
+     padding-bottom: 5rem;
+  
+}
+.heading span{
+    color: blue;
+}
+.title{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.edu{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+} 
+/* using this we make equal partion  in skill*/
+  .Skills{ 
+     display: flex;
+    justify-content: center;
+    align-items: left; 
+    flex-direction: column; 
+     min-height: auto;
+    gap: 1rem;  
+    background: var(--second-bg-color);
+     padding-bottom: 7rem;
+  
+} 
+ .Skills.skill-row {
+ font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align:left; 
+    display: flex;
+   flex-wrap: wrap;
+   gap: 8rem;
+} 
+
+.skill-row.skill-column{
+flex: 1 1 40rem;
+}
+.skill-column.title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.skill-box .skill-content{
+    position: relative;
+    border: .2rem solid var(--main-bg-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+.skill-content .progress h3{
+    padding: 1rem 0;
+    
+}
+.skill-content .progress h3{
+   font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.skill-content .progress .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-bg-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.skill-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-bg-color);
+}  
+/* .skills-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+.skill{
+    position: relative;
+    margin-bottom: 40px;
+}
+.skill-title{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    background: rgb(210, 200, 219);
+    height: 40px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+} */
+
+
+
+.HTML{
+animation: HTML 2s;
+width: 90%;
+}
+.css{
+    animation: css 2s;
+    width: 70%;
+    }
+.dsa{
+animation: dsa 2s;
+width: 50%;
+}
+.CProgramming{
+    animation: CProgramming 2s;
+    width: 50%;
+    }
+    .mysql{
+        animation: mysql 2s;
+        width: 40%;
+        }
+
+@keyframes html {
+    from{
+        width:0 ;
+    }
+    to{
+        width:90% ;
+    }
+}
+
+@keyframes css {
+    from{
+        width:0 ;
+    }
+    to{
+        width:70% ;
+    }
+}
+
+@keyframes dsa {
+    from{
+        width:0 ;
+    }
+    to{
+        width:50% ;
+    }
+}
+
+@keyframes CProgramming {
+    from{
+        width:0 ;
+    }
+    to{
+        width:50% ;
+    }
+}
+
+@keyframes mysql {
+    from{
+        width:0 ;
+    }
+    to{
+        width:40% ;
+    }
+}             
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    gap: 1rem; 
+    background: var(--bg-color);
+     padding-bottom: 5rem;
+}
+
+.project{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align:left;
+}
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    min-height: auto;
+    gap: 1rem; 
+    background: var(--second-bg-color);
+     padding-bottom: 5rem; 
+}
+
+
+.contact{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align:left;
+    
+}
+
+.Resume{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    min-height: auto;
+    gap: 1rem; 
+    background: var(--bg--color);
+     padding-bottom: 5rem; 
+}
+.resume{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align:left;
+     
+}
+.footer{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align:left;
+
+    display: flex;
+    gap: 2rem;
+
+}
